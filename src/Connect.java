@@ -18,21 +18,6 @@ public class Connect {
         return conn;
     }
 
-//    public void insertNews() {
-//        String SQLInsertNews = "INSERT INTO \"news\".news (header, text) VALUES (?, ?)";
-//        try {
-//            PreparedStatement preparedStatement = connection().prepareStatement(SQLInsertNews);
-//            System.out.println("Write headline please");
-//            preparedStatement.setString(1, );
-//            System.out.println("Write text of the news");
-//            String text = sc.nextLine();
-//            preparedStatement.setString(2, text);
-//            preparedStatement.executeUpdate();
-//        } catch (Exception throwable) {
-//            throwable.printStackTrace();
-//        }
-//    }
-
     public void addNews(News news) {
         String add = "INSERT INTO \"news\".news (header, text) VALUES (?, ?)";
         try (Connection conn = connection();
